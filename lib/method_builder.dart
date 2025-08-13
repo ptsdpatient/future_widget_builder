@@ -59,12 +59,12 @@ class _MethodBuilder extends State<MethodBuilder> {
             )
             .toList();
       } else {
-        print(
-          'Problem loading content : ${response.statusCode} - ${response.body}',
-        );
+        // print(
+        //   'Problem loading content : ${response.statusCode} - ${response.body}',
+        // );
       }
     } catch (error) {
-      print('Error occurred: $error');
+      // print('Error occurred: $error');
     }
     return [];
   }
@@ -123,7 +123,7 @@ class _MethodBuilder extends State<MethodBuilder> {
                               widget.iconBuilder?.call(item) ??
                                   Icon(widget.icon),
                               Text(
-                                item[0] ?? "Title",
+                                item[0],
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -132,7 +132,7 @@ class _MethodBuilder extends State<MethodBuilder> {
                             ],
                           ),
                           Text(
-                            item[1] ?? "Side Info",
+                            item[1],
                             style: TextStyle(
                               fontSize: 12,
                               color: Colors.black45,
