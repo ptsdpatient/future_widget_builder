@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Made a comprehensive widget builder that gives customizable widget that works on future builder and makes nice looking customizable widgets with http method and token
