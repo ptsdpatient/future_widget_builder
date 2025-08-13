@@ -1,8 +1,8 @@
 name: future_widget_builder
 description: "A new Flutter package project."
 version: 0.0.1
-homepage: https://github.com/yourusername/your_package
-repository: https://github.com/yourusername/your_package
+homepage: https://github.com/ptsdpatient/future_widget_builder
+repository: https://github.com/ptsdpatient/future_widget_builder
 
 environment:
   sdk: ^3.8.1
