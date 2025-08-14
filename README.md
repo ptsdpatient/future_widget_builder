@@ -20,7 +20,7 @@ This widget is built for flexibility and supports customization via padding, mar
 
 ## Installation
 
-    Add this to your `pubspec.yaml`:
+Add this to your `pubspec.yaml`:
     
         dependencies:
           method_builder: ^0.0.1
@@ -60,15 +60,3 @@ This widget is built for flexibility and supports customization via padding, mar
       }
     }
 
-
-## License
-    ---
-    
-    This keeps the README **developer-friendly**, covers:
-    - What it is  
-    - Features  
-    - Installation  
-    - Usage example  
-    - Parameter table  
-    
-    If you want, I can also **add an “API Call Flow” diagram** so your `pub.dev` page looks more professional and visual. That usually boosts adoption rates.

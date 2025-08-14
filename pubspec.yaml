@@ -1,5 +1,5 @@
 name: future_widget_builder
-description: "A comprehensive widget builder that gives customizable widget that works on future builder and makes nice looking customizable widgets with http method and Json Web Token. Requires http and secure storage."
+description: "Customizable Flutter widget builder with FutureBuilder, HTTP & JWT support."
 version: 0.0.1
 homepage: https://github.com/ptsdpatient/future_widget_builder
 repository: https://github.com/ptsdpatient/future_widget_builder
