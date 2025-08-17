@@ -33,20 +33,20 @@ Add this to your `pubspec.yaml`:
 
 ## Preview
 
-### Basic Information Widget
-
-![Preview 1](https://raw.githubusercontent.com/ptsdpatient/future_widget_builder/refs/heads/master/preview/data.png)
-
-Basic data representation using future (Title, Subtitle, Icon, Description and Time)
-
 ### Product Preview Widget
 
-![Preview 2](https://raw.githubusercontent.com/ptsdpatient/future_widget_builder/refs/heads/master/preview/product.gif)
+![Preview 1](https://raw.githubusercontent.com/ptsdpatient/future_widget_builder/refs/heads/master/preview/product.gif)
 
 Showing product like widgets that are highly customizable and show (Product media, Product Labels, Manufacturing Brand, Model, Title, Rating and Time)
 
 ### Media Preview Widget
 
-![Preview 3](https://raw.githubusercontent.com/ptsdpatient/future_widget_builder/refs/heads/master/preview/media.png)
+![Preview 2](https://raw.githubusercontent.com/ptsdpatient/future_widget_builder/refs/heads/master/preview/media.png)
 
 Showing youtube like widgets that are highly customizable and show (Media Image, Media Labels, Title, Channel Name, Views analytics and Time)
+
+### Basic Information Widget
+
+![Preview 3](https://raw.githubusercontent.com/ptsdpatient/future_widget_builder/refs/heads/master/preview/data.png)
+
+Basic data representation using future (Title, Subtitle, Icon, Description and Time)
