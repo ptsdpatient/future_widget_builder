@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: MethodBuilder(
+        body: MethodBuilder.data(
           route: "/home",
-          info: ["Name", "Email", "Phone"],
+          map: ["Name", "Email", "Phone"],
           apiUrl: "https://api.example.com/data",
           icon: Icons.info,
           widthFactor: 0.8,
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             color: Colors.blue[50],
             borderRadius: BorderRadius.circular(8),
           ),
-          iconBuilder: (items) => Icon(Icons.star, color: Colors.amber),
+          iconBuilder: (items) => Icon(Icons.star, color: Colors.amber)
         ),
       ),
     );

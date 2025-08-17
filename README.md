@@ -22,41 +22,26 @@ This widget is built for flexibility and supports customization via padding, mar
 
 Add this to your `pubspec.yaml`:
     
-        dependencies:
-          method_builder: ^0.0.1
-          http: ^1.2.0
-          flutter_secure_storage: ^9.0.0
+    dependencies:
+      method_builder: ^0.0.1
+      http: ^1.2.0
+      flutter_secure_storage: ^9.0.0
 
 ## Run
     flutter pub get
 
-## Usage
 
-    import 'package:flutter/material.dart';
-    import 'package:method_builder/method_builder.dart';
-    
-    class ExamplePage extends StatelessWidget {
-      const ExamplePage({super.key});
-    
-      @override
-      Widget build(BuildContext context) {
-        return Scaffold(
-          body: MethodBuilder(
-            route: "/profile",
-            apiUrl: "https://api.example.com/profile",
-            info: ["Name", "Email", "Phone"],
-            token: "your_jwt_token_here",
-            icon: Icons.account_circle,
-            widthFactor: 0.8,
-            padding: const EdgeInsets.all(8),
-            margin: const EdgeInsets.all(16),
-            boxDecoration: BoxDecoration(
-              color: Colors.blue[50],
-              borderRadius: BorderRadius.circular(8),
-            ),
-            iconBuilder: (items) => const Icon(Icons.star, color: Colors.amber),
-          ),
-        );
-      }
-    }
+## Preview
 
+
+![Preview 1](https://raw.githubusercontent.com/ptsdpatient/flutter_widget_builder/main/preview/data.png)
+
+Basic data representation using future (Title, Subtitle, Icon, Description and Time)
+
+![Preview 2](https://raw.githubusercontent.com/ptsdpatient/flutter_widget_builder/main/preview/product.gif)
+
+Showing product like widgets that are highly customizable and show (Product media, Product Labels, Manufacturing Brand, Model, Title, Rating and Time)
+
+![Preview 3](https://raw.githubusercontent.com/ptsdpatient/flutter_widget_builder/main/preview/media.png)
+
+Showing youtube like widgets that are highly customizable and show (Media Image, Media Labels, Title, Channel Name, Views analytics and Time)
