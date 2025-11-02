@@ -221,7 +221,7 @@ class _MethodBuilder extends State<MethodBuilder> {
       future: widget.method ?? getMethod(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          final data = snapshot.data ?? [];
+          final List<dynamic> data = (snapshot.data as List?) ?? [];
           return SliverToBoxAdapter(
             child: ListView.builder(
               shrinkWrap: true,
