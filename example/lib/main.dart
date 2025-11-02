@@ -15,11 +15,12 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('My Package Example')),
         body: CustomScrollView(
+          scrollDirection: Axis.vertical,
           slivers: [
             MethodBuilder.data(
               apiUrl: apiUrl,
               route: 'recipes',
-              // widthFactor: 0.3,
+              widthFactor: 0.3,
               map: ["recipe_name","sugar"],
               widgetBuilder: (List<String> data) {
                 return Container(

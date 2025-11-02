@@ -227,7 +227,7 @@ class _MethodBuilder extends State<MethodBuilder> {
               child: ListView.builder(
                 shrinkWrap: true,
                 physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
+                scrollDirection: Axis.vertical,
                 itemCount: data.length,
                 itemBuilder: (BuildContext context, int index) {
 

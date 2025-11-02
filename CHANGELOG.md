@@ -13,3 +13,7 @@
 ## 0.0.8
 
 * Removed deps on secure storage 
+
+## 1.0.0
+
+* Fixed custom widget building and example project added for testing and deployment.
