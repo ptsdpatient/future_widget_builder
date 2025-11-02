@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:future_widget_builder/main.dart';
-import 'package:future_widget_builder/method_builder.dart';
-
+import 'package:example/method_builder.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +8,7 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  String apiUrl = 'https://xyz.endpoint/route';
+  String apiUrl = 'http://localhost:3000';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,12 +16,23 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(title: const Text('My Package Example')),
         body: CustomScrollView(
           slivers: [
-            MethodBuilder.media(
+            MethodBuilder.data(
               apiUrl: apiUrl,
-              route: 'fetchCameras',
-              icon: Icons.access_alarm_rounded,
-              map: [],
-
+              route: 'recipes',
+              // widthFactor: 0.3,
+              map: ["recipe_name","sugar"],
+              widgetBuilder: (List<String> data) {
+                return Container(
+                  width: double.infinity,
+                  height:50,
+                  child: Text(
+                    "${data[0]} _ ${data[1]}",
+                    style: TextStyle(
+                      color: Colors.blueGrey
+                    ),
+                  ),
+                );
+            },
             ),
           ],
         )

@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:future_widget_builder/methods.dart';
-import 'package:future_widget_builder/token.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -176,14 +175,14 @@ class _MethodBuilder extends State<MethodBuilder> {
         Uri.parse('${widget.apiUrl}/${widget.route}'),
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer ${await getToken()}',
+          'Authorization': 'Bearer ${widget.token}',
         },
       )
           : http.post(
         Uri.parse('${widget.apiUrl}/${widget.route}'),
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer ${await getToken()}',
+          'Authorization': 'Bearer ${widget.token}',
         },
         body: widget.postBody,
       ));
@@ -230,7 +229,6 @@ class _MethodBuilder extends State<MethodBuilder> {
               itemCount: data.length,
               itemBuilder: (BuildContext context, int index) {
                 final item = data[index];
-
                 widget.widgetBuilder?.call(item);
 
                 switch (widget.type) {

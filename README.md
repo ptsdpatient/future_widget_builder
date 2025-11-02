@@ -23,9 +23,7 @@ This widget is built for flexibility and supports customization via padding, mar
 Add this to your `pubspec.yaml`:
     
     dependencies:
-      method_builder: ^0.0.1
-      http: ^1.2.0
-      flutter_secure_storage: ^9.0.0
+      future_widget_builder: any
 
 ## Run
     flutter pub get
