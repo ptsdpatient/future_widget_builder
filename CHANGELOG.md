@@ -17,3 +17,7 @@
 ## 1.0.0
 
 * Fixed custom widget building and example project added for testing and deployment.
+
+## 2.0.0
+
+* Removed deps on custom scroll view and switched to grid view along with direction gap and row col variable.

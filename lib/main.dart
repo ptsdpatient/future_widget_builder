@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'method_builder.dart';
+import 'package:future_widget_builder/future_widget_builder.dart';
+import 'package:future_widget_builder/methods.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: MethodBuilder.data(
+        body: FutureWidgetBuilder.data(
           route: "/home",
           map: ["Name", "Email", "Phone"],
           apiUrl: "https://api.example.com/data",
