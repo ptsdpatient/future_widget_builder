@@ -1,0 +1,48 @@
+"ID","District","Assembly","AC No","PS  No","PS Address","STREAM ID","STATUS","Supervisor NAME","Supervisor NUMBER","Operator NAME","Operator NUMBER"
+1,"Chandrapur","CHANDRAPUR",71.00,"130-OUT","Union Karyalay Sneh Manch MEL Chandrapur","HF38078702376","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+2,"Chandrapur","CHANDRAPUR",71.00,"131-IN","Sneh Manch MEL Ward Imarat Pachim Baji Room No.2","HF38078702377","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+3,"Chandrapur","CHANDRAPUR",71.00,"345-OUT","Tempo Club Building Colony No. 1","HF38078703681","Offline","Akash Sunil Chopra",8806601202.00,"Akash Sunil Chopra",8806601202.00
+4,"Chandrapur","CHANDRAPUR",71.00,"196-IN","Citi Madhyamik Vidhyalay Babupeth Imarat Uttar Bhag Room No.4","HF38078711173","Offline","Sachin Ramesh Sayare",8983371022.00,"Prajakta Dnyaneshwar Bhajankar",9637592234.00
+5,"Chandrapur","CHANDRAPUR",71.00,"132-OUT","Mata Kasturba Gandhi Kanya Primary MANPA School Darga Ward Room No.1","HF38078711711","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+6,"Chandrapur","CHANDRAPUR",71.00,"134-IN","Kamgar Kalyan Kendrachi Kholi MEL Coloney","HF38078714971","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+7,"Chandrapur","CHANDRAPUR",71.00,"189-IN","mAHAKALI cOlari Manpa Prthmik School Marathi Mahadev Mandir Javal Uttar Bhag Room No.3 Juni Imarat","HF38078717492","Offline","Dhammdip Nandagavali",9168201164.00,"Rohan Kove",7721912280.00
+8,"Chandrapur","CHANDRAPUR",71.00,"230-IN","Jillha Shikshan V Prashikshan Sanstha Babupeth Room No.4","HF38078718679","Offline","Sachin Ramesh Sayare",8983371022.00,"Arjun Dnyaneshwar Bhajankar",7264070694.00
+9,"Chandrapur","CHANDRAPUR",71.00,"242-IN","FES Girls High School Chandrapur Room No.3 Pachimekadil Imarat","HF38078719683","Offline","Pranil Rajeshwar Naramshetiwar",9420445536.00,"Pranil Rajeshwar Naramshetiwar",9420445536.00
+10,"Chandrapur","CHANDRAPUR",71.00,"109-IN","Swargiya Bapuraoji Wankhede Vidyalay Sanjaynagar Room No.3","HF38078724943","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+11,"Chandrapur","CHANDRAPUR",71.00,"90-IN","Karmvir Kannamwar Pri. School, Room No. 3","HF38078726879","Offline","KAILASH UDDHAV RAMTEKE",7768881981.00,"KAILASH UDDHAV RAMTEKE",7768881981.00
+12,"Chandrapur","CHANDRAPUR",71.00,"136-IN","Rayyatwari Colory Semi English Muncipal Corporation   Building North Side Room No. 2","HF38078727513","Offline","Rakesh Subhash Ruyarkar",8600015659.00,"Rakesh Subhash Ruyarkar",8600015659.00
+13,"Chandrapur","CHANDRAPUR",71.00,"103-OUT","Samaj Mandir Sabhagruh MANPA Krushna Nagar","HF38078734296","Offline","Dhammdip Nandagavali",9168201164.00,"Manish Sakhre",7354004955.00
+14,"Chandrapur","CHANDRAPUR",71.00,"129-OUT","Sport Club Ground Sneh MEL Ward Imarat Purva Baju Room No.1","HF38078736280","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+15,"Chandrapur","CHANDRAPUR",71.00,"303-OUT","St Michel English School Room No. 2","HF38078741737","Offline","Sachin Ramesh Sayare",8983371022.00,"Roshan Deorao Angdalwar",7887840085.00
+16,"Chandrapur","CHANDRAPUR",71.00,"195-IN","Citi Madhyamik Vidhyalay Babupeth Imarat Uttar Bhag Room No.3","HF38078743147","Offline","Sachin Ramesh Sayare",8983371022.00,"Prajakta Dnyaneshwar Bhajankar",9637592234.00
+17,"Chandrapur","CHANDRAPUR",71.00,"118-IN","Amar Shahid Bhagatshing Primary School Imarat Room No.2","HF38078751113","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+18,"Chandrapur","CHANDRAPUR",71.00,"107-OUT","Swargiya Bapuraoji Wankhede Vidyalay Sanjaynagar Room No.1","HF38078753192","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+19,"Chandrapur","CHANDRAPUR",71.00,"315-OUT","Police Kalyan Sabhagruh North Side Tadoba Road","HF38078754200","Offline","Dhammdip Nandagavali",9168201164.00,"Rohan Kove",7721912280.00
+20,"Chandrapur","CHANDRAPUR",71.00,"5-OUT","Vidyavihar Mandir,Urjagram  room no. 1","HF38078757150","Offline","Avinash Parshuram Jamdade",7219754531.00,"Pravin Chandu Junghare",9511980114.00
+21,"Chandrapur","CHANDRAPUR",71.00,"129-IN","Sport Club Ground Sneh MEL Ward Imarat Purva Baju Room No.1","HF38078759005","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+22,"Chandrapur","CHANDRAPUR",71.00,"312-IN","Sardar Vallabhbhai Patel MNP School Room No. 2","HF38078763312","Offline","Sachin Ramesh Sayare",8983371022.00,"Prashant Prabhushakar Gawade",9307063630.00
+23,"Chandrapur","CHANDRAPUR",71.00,"319-IN","Janta High School (Wasekar Wadi) South Side Room No. 5","HF38078769706","Offline","Dhammdip Nandagavali",9168201164.00,"Rohan Kove",7721912280.00
+24,"Chandrapur","CHANDRAPUR",71.00,"116-IN","Rajiv Gandhi Mahavidyalay Sabhagruh Imarat Mul Road","HF38078775703","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+25,"Chandrapur","CHANDRAPUR",71.00,"117-IN","Amar Shahid Bhagatshing Primary School Imarat Uttar Bhag Room No.1","HF38078777192","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+26,"Chandrapur","CHANDRAPUR",71.00,"46-IN","Pandit Dindayal Upadhya Semi English Medium School Room No.3","HF38078778783","Offline","Dhammdip Nandagavali",9168201164.00,"Dhammdip Nandagavali",9168201164.00
+27,"Chandrapur","CHANDRAPUR",71.00,"126-IN","Rani Rajkuvar Hindi Primary School Uttar Bhag MEL Coloney Room No.2","HF38078781023","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+28,"Chandrapur","CHANDRAPUR",71.00,"128-IN","Rani Rajkuvar Hindi Primary School dakshin Bhag MEL Coloney Room No.1","HF38078783043","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+29,"Chandrapur","CHANDRAPUR",71.00,"134-OUT","Kamgar Kalyan Kendrachi Kholi MEL Coloney","HF38078792471","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+30,"Chandrapur","CHANDRAPUR",71.00,"213-IN","Jillha Shikshan Prashikshan Sanstha Babupeth Room No.2","HF38078797633","Offline","Sachin Ramesh Sayare",8983371022.00,"Arjun Dnyaneshwar Bhajankar",7264070694.00
+31,"Chandrapur","CHANDRAPUR",71.00,"127-OUT","Rani Rajkuvar Hindi Primary School Uttar Bhag MEL Coloney Room No.3","HF38078799367","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+32,"Chandrapur","CHANDRAPUR",71.00,"120-IN","Amar Shahid Bhagatshing Primary School Juni Imarat Uttar Bhag Room No.4","HF38078901527","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+33,"Chandrapur","CHANDRAPUR",71.00,"88-IN","Sadguru vyayam School , sarkar nagar, near  çKarmvir Kannamwar Pri. School Shejari","HF38078901675","Offline","KAILASH UDDHAV RAMTEKE",7768881981.00,"KAILASH UDDHAV RAMTEKE",7768881981.00
+34,"Chandrapur","CHANDRAPUR",71.00,"115-IN","Rajiv Gandhi Mahavidyalay Mul Road CHandrpaur Room No.3","HF38078902018","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+35,"Chandrapur","CHANDRAPUR",71.00,"182-IN","Murlidhar Bagla Highschool Imarat Room No.1","HF38078902231","Offline","Sachin Ramesh Sayare",8983371022.00,"Rahil Javed Sheikh",7498401628.00
+36,"Chandrapur","CHANDRAPUR",71.00,"104-IN","M.B Primary & Upper Primary School Krushna Nagar Room No.1","HF38078902670","Offline","Dhammdip Nandagavali",9168201164.00,"Manish Sakhre",7354004955.00
+37,"Chandrapur","CHANDRAPUR",71.00,"119-IN","Amar Shahid Bhagatshing Primary School Juni Imarat Uttar Bhag Room No.3","HF38078906650","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+38,"Chandrapur","CHANDRAPUR",71.00,"133-IN","Mata Kasturba Gandhi Kanya Primary MANPA School Darga Ward Room No.2","HF38078913036","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+39,"Chandrapur","CHANDRAPUR",71.00,"178-IN","Upshetriya Prabandhak Mahakali Colory Stapatya Vibhag Room No.2","HF38078913973","Offline","Dhammdip Nandagavali",9168201164.00,"Rohan Kove",7721912280.00
+40,"Chandrapur","CHANDRAPUR",71.00,"329-OUT","I.T.I. Center, Near Warora Naka Room No. 1","HF38078918057","Offline","Dhammdip Nandagavali",9168201164.00,"Rohan Kove",7721912280.00
+41,"Chandrapur","CHANDRAPUR",71.00,"130-IN","Union Karyalay Sneh Manch MEL Chandrapur","HF38078949592","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+42,"Chandrapur","CHANDRAPUR",71.00,"389-IN","ZP Primary School Chorada","HF38078957170","Offline","Avinash Parshuram Jamdade",7219754531.00,"Vikas Kawdu Dhoke",9545638042.00
+43,"Chandrapur","CHANDRAPUR",71.00,"257-IN","Abyhyankar MNP Primary School Room No. 1","HF38078962496","Offline","Tanmay Haridas Koram",8767884674.00,"Tanmay Haridas Koram",8767884674.00
+44,"Chandrapur","CHANDRAPUR",71.00,"132-IN","Mata Kasturba Gandhi Kanya Primary MANPA School Darga Ward Room No.1","HF38078962738","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+45,"Chandrapur","CHANDRAPUR",71.00,"125-OUT","Rani Rajkuvar Hindi Primary School Uttar Bhag MEL Coloney Room No.1","HF38078963731","Offline","Dhammdip Nandagavali",9168201164.00,"Jaydeep Masurkar",7447683391.00
+46,"Chandrapur","CHANDRAPUR",71.00,"77-OUT","Bhavanji Bhai Chavhan Highschool, Sabhagruh Tukum","HF4G119324","Offline","Dhammdip Nandagavali",9168201164.00,"Manish Sakhre",7354004955.00
+47,"Chandrapur","CHANDRAPUR",71.00,"62-OUT","Vidyavihar conventtukum , chandrapur room no. 5","HF4G149338","Offline","Dhammdip Nandagavali",9168201164.00,"Dhammdip Nandagavali",9168201164.00

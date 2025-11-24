@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: FutureWidgetBuilder.data(
-          route: "/home",
+          databaseName: 'assets/output.db',
+          tableName: 'polling_table',
           map: ["Name", "Email", "Phone"],
-          apiUrl: "https://api.example.com/data",
           icon: Icons.info,
           widthFactor: 0.8,
           padding: const EdgeInsets.all(8),

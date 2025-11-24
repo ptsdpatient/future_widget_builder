@@ -1,10 +1,13 @@
 import 'dart:convert';
-
+import 'package:sqflite/sqflite.dart';
+import 'package:path/path.dart' as p;
+import 'package:path_provider/path_provider.dart';
 import 'package:future_widget_builder/methods.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 enum WidgetType { data, media, product, profile, event, summary }
+enum FetchType {sqlite3,rest}
 
 class SnapImageView extends StatefulWidget {
   final List<String> imageUrls;
@@ -60,7 +63,7 @@ class FutureWidgetBuilder extends StatefulWidget {
 
   /// [apiUrl] is string of the remote server endpoint route is excluded
   /// [route] is string of the method that you are calling
-  final String route, apiUrl;
+  final String? route, apiUrl;
 
   final double? widthFactor;
   final EdgeInsets? padding, margin;
@@ -68,6 +71,8 @@ class FutureWidgetBuilder extends StatefulWidget {
   final WidgetType? type;
   final double? borderRadius;
 
+  String? databaseName = "database_name", tableName = "table_name";
+  FetchType? fetchType = FetchType.rest;
   Axis? direction = Axis.vertical;
   int? gridCols = 0;
   double? gridRows = 0;
@@ -100,10 +105,13 @@ class FutureWidgetBuilder extends StatefulWidget {
   /// [MethodBuilder.data] returns very basic descriptive widget uses Title, Subtitle, Description, Icon and many more
   FutureWidgetBuilder.data({
     super.key,
-    required this.route,
+    this.route,
     required this.map,
-    required this.apiUrl,
+    this.apiUrl,
+    this.databaseName,
+    this.tableName,
     this.method,
+    this.fetchType,
     this.mediaPreviewBuilder,
     this.postBody,
     this.direction,
@@ -125,10 +133,13 @@ class FutureWidgetBuilder extends StatefulWidget {
   /// [MethodBuilder.media] returns media widget like youtube,ott videos and streams uses Title, Subtitle, Image, Description, Icon and many more
   FutureWidgetBuilder.media({
     super.key,
-    required this.route,
+    this.route,
     required this.map,
-    required this.apiUrl,
+    this.apiUrl,
+    this.databaseName,
+    this.tableName,
     this.mediaPreviewBuilder,
+    this.fetchType,
     this.method,
     this.postBody,
     this.borderRadius,
@@ -156,11 +167,14 @@ class FutureWidgetBuilder extends StatefulWidget {
 
   FutureWidgetBuilder.product({
     super.key,
-    required this.route,
+    this.route,
     required this.map,
-    required this.apiUrl,
+    this.apiUrl,
     required this.mediaPreviewBuilder,
+    this.databaseName,
+    this.tableName,
     this.productDescriptionBuilder,
+    this.fetchType,
     this.productPreviewBuilder,
     this.method,
     this.postBody,
@@ -185,7 +199,7 @@ class FutureWidgetBuilder extends StatefulWidget {
 class _MethodBuilder extends State<FutureWidgetBuilder> {
   bool visible = true;
 
-  Future<List<List<String>>> getMethod() async {
+  Future<List<List<String>>> restFetch() async {
     try {
       final response = await (widget.postBody == null
           ? http.get(
@@ -225,6 +239,28 @@ class _MethodBuilder extends State<FutureWidgetBuilder> {
     return [];
   }
 
+  Future<List<List<String>>> sqliteFetch() async {
+    try {
+      final docsDir = await getApplicationDocumentsDirectory();
+      final dbPath = p.join(docsDir.path, widget.databaseName ?? "database_name.db");
+
+      final db = await openDatabase(dbPath);
+
+      final List<Map<String, dynamic>> result =
+      await db.query(widget.tableName ?? "table_name");
+
+      return result.map((row) {
+        return List.generate(
+          widget.map.length,
+              (index) => row[widget.map[index]].toString(),
+        );
+      }).toList();
+    } catch (error) {
+      print('SQLite Error: $error');
+      return [];
+    }
+  }
+
   @override
   void initState() {
     // TODO: implement initState
@@ -234,7 +270,7 @@ class _MethodBuilder extends State<FutureWidgetBuilder> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: widget.method ?? getMethod(),
+      future: widget.method ?? (widget.fetchType == FetchType.rest?  restFetch() : sqliteFetch()),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
           final List<dynamic> data = (snapshot.data as List?) ?? [];

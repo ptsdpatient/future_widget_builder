@@ -8,17 +8,16 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  String apiUrl = 'http://localhost:3000';
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('My Package Example')),
         body: FutureWidgetBuilder.data(
-          apiUrl: apiUrl,
-          route: 'recipes',
-          map: ["recipe_name", "sugar"],
+          fetchType: FetchType.sqlite3,
+          databaseName: 'assets/output.db',
+          tableName: 'polling_table',
+          map: ["District", "Assembly"],
           direction: Axis.horizontal,
           widgetBuilder: (List<String> data) {
             return Container(
