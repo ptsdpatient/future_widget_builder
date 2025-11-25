@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(title: const Text('My Package Example')),
         body: FutureWidgetBuilder.data(
           fetchType: FetchType.sqlite3,
-          databaseName: 'assets/output.db',
+          databaseName: 'output.db',
           tableName: 'polling_table',
           map: ["District", "Assembly"],
           direction: Axis.horizontal,

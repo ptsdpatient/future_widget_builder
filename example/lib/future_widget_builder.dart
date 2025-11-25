@@ -5,7 +5,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:example/methods.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-
+import 'dart:io';                       // For File, Directory
+import 'package:flutter/services.dart'; // For rootBundle, ByteData
 
 enum WidgetType { data, media, product, profile, event, summary }
 enum FetchType {sqlite3,rest}
@@ -255,11 +256,19 @@ class _MethodBuilder extends State<FutureWidgetBuilder> {
       print("🗺 Full database path: $dbPath");
 
       print("🔌 Attempting openDatabase...");
-      final db = await openDatabase(dbPath, onOpen: (_) {
-        print("📘 Database opened successfully!");
-      }, onCreate: (db, version) {
-        print("🆕 Database created with version: $version");
-      });
+      // final db = await openDatabase(dbPath,  version: 1, onOpen: (_) {
+      //   print("📘 Database opened successfully!");
+      // }, onCreate: (db, version) {
+      //   print("🆕 Database created with version: $version");
+      // });
+
+      await copyDatabaseFromAssets();
+      final db = await openDatabase(dbPath);
+
+
+      final tables = await db
+          .rawQuery("SELECT name FROM sqlite_master WHERE type='table';");
+      print("📋 Tables inside database: $tables");
 
       print("📊 Preparing to query table...");
       final tableName = widget.tableName ?? "table_name";
@@ -292,6 +301,44 @@ class _MethodBuilder extends State<FutureWidgetBuilder> {
       return [];
     }
   }
+  
+  Future<void> copyDatabaseFromAssets() async {
+    final dbFolder = await getApplicationDocumentsDirectory();
+    final dbPath = '${dbFolder.path}/output.db';
+
+    // Delete existing DB to avoid using empty auto-created file
+    if (await File(dbPath).exists()) {
+      await File(dbPath).delete();
+      print("🗑 Old database deleted!");
+    }
+
+    // Load from assets and write to file
+    ByteData data = await rootBundle.load('assets/output.db');
+    List<int> bytes =
+    data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+    await File(dbPath).writeAsBytes(bytes, flush: true);
+    print("📥 Database copied from assets successfully!");
+  }
+
+  Future<Database> openPrebuiltDatabase() async {
+    final dir = await getApplicationDocumentsDirectory();
+    final dbPath = p.join(dir.path, 'output.db');
+
+    // Copy only if DB doesn't exist
+    if (!await File(dbPath).exists()) {
+      print("📥 Copying prebuilt DB from assets...");
+
+      ByteData data = await rootBundle.load('assets/output.db');
+      List<int> bytes =
+      data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
+
+      await File(dbPath).writeAsBytes(bytes, flush: true);
+      print("✔️ Database copied to $dbPath");
+    }
+
+    return openDatabase(dbPath, readOnly: false);
+  }
+
 
 
   @override
